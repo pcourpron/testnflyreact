@@ -1,0 +1,292 @@
+@import "../../styles/index.scss";
+
+@mixin fadein($delay, $duration) {
+  animation: fadeIn $duration forwards;
+  animation-delay: $delay;
+}
+
+.mainImage {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: 300px -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    min-height: 0.45vw;
+  }
+
+  button {
+    @include shadow;
+    padding: 14px 28px;
+    font-size: 17px;
+  }
+}
+.section {
+  padding: 15px 30px 30px;
+  text-align: center;
+  background-color: $background-main;
+  width: 100%;
+  .sidebarHeader {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+  }
+}
+.iconContainer {
+  display: flex;
+  margin: 0 auto;
+  text-align: left;
+
+  .iconHeader {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  img {
+    height: 200px;
+  }
+}
+
+.header {
+  color: $darkblue;
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  p {
+    font-size: 14px;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+}
+.mainImage::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  display: block;
+  position: absolute;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  @include main;
+  i {
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.testingSection {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  margin-top: -50px;
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .subSection {
+    display: flex;
+    width: 900px;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+    &.centerSection {
+      margin: 60px auto 40px;
+    }
+    &:nth-child(3) {
+      margin-top: -40px;
+    }
+    .pictureContainer {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      color: $darkblue;
+      font-weight: bold;
+      position: relative;
+      font-size: 20px;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+      }
+      img {
+        margin-bottom: 15px;
+        max-width: 325px;
+        border-radius: 10px;
+
+        cursor: pointer;
+      }
+      .reopen {
+        position: absolute;
+        max-width: 1000px;
+        margin: 0px auto 0px;
+        font-size: 14px;
+        line-height: 1.7;
+        bottom: -10px;
+        transform: translate(0, 100%);
+      }
+    }
+    .sectionLogo {
+      max-width: 225px;
+      border-radius: 0;
+      transition: 0.4s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    p {
+      max-width: 500px;
+      text-align: start;
+      line-height: 28px;
+      font-size: 16px;
+    }
+  }
+  .quote {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    margin: 200px auto 20px;
+    i {
+      margin-left: 20px;
+    }
+    strong {
+      font-size: 21px;
+      margin: 10px auto;
+      display: inline-block;
+    }
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  margin-left: 0.5rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0 auto;
+  line-height: 1.15;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px grey;
+  color: white;
+  z-index: 10;
+  width: fit-content;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
