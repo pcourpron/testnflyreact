@@ -1,0 +1,20 @@
+.main {
+  h1 {
+    text-align: center;
+  }
+  .sectionContainer {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    &:nth-child(2n + 1) {
+      flex-direction: row-reverse;
+    }
+    .accuracyImage {
+      max-width: 150px;
+    }
+    img {
+      max-width: 300px;
+    }
+  }
+}

@@ -53,7 +53,7 @@ export const Homepage = () => {
         <div className={styles.subSection}>
           <div
             className={styles.pictureContainer}
-            onClick={() => history.push("/about-test-n-fly")}
+            onClick={() => history.push("/about-testing")}
           >
             <img src="/images/nasalSwab.jpg" className={styles.swabImage} />
             Quick and accurate testing

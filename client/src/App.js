@@ -10,7 +10,12 @@ import { AboutUs } from "./pages/AboutUs";
 import { ContactUs } from "./pages/ContactUs";
 import { cacheImages } from "./cacheImages";
 import { PassangersBack } from "./pages/PassengersBack";
-
+import { AboutTest } from "./pages/AboutTest";
+import { AboutTesting } from "./pages/AboutTesting";
+import { Footer } from "./components/Footer";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 const imageArray = [
   "/images/preboard.jpg",
   "/images/team.jpg",
@@ -33,11 +38,13 @@ function App() {
         <Route path="/about-us" component={AboutUs} />
         <Route path="/contact-us" component={ContactUs} />
         <Route path="/passengers-back" component={PassangersBack} />
-
+        <Route path="/about-test-n-fly" component={AboutTest} />
+        <Route path="/about-testing" component={AboutTesting} />
         <Route>
           <Redirect to="/" />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

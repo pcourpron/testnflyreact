@@ -1,0 +1,124 @@
+@import "../../styles/index.scss";
+.sectionHeader {
+  background-image: url("/images/waiting.jpg");
+  background-size: cover;
+  text-align: center;
+
+  padding: 160px 120px 160px 120px;
+  width: 100%;
+  position: relative;
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  h1 {
+    z-index: 10;
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 62px;
+    line-height: 72px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 0 0 10px grey;
+  }
+  .steps {
+    text-shadow: 0 0 5px black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    span {
+      cursor: pointer;
+      margin: 0 10px;
+    }
+  }
+}
+
+.main {
+  @include main;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 1050px;
+  margin: 30px auto;
+  .subSection {
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    &:nth-child(2n + 1) {
+      flex-direction: row-reverse;
+    }
+
+    .iconHeader {
+      font-weight: bold;
+      font-size: 25px;
+      max-width: 400px;
+    }
+
+    p {
+      max-width: 500px;
+      text-align: start;
+      line-height: 28px;
+      font-size: 16px;
+    }
+    .sidebarImage {
+      max-width: 400px;
+    }
+  }
+}
+.integrationIcons {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  &.trigger:after {
+    content: "";
+    background: $lightblue;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    bottom: 100%;
+    z-index: 0;
+    animation: grow 2s linear forwards;
+  }
+}
+.icon {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  min-width: 350px;
+  text-align: start;
+  z-index: 10;
+}
+.arrow {
+  width: 50px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+@keyframes grow {
+  0% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: 10px;
+  }
+}

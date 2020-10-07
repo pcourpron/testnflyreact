@@ -1,5 +1,5 @@
 import VizSensor from "react-visibility-sensor";
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "./lazyimage.module.scss";
 import classNames from "classnames";
 export default ({ img, icon, text, className, preload }) => {
