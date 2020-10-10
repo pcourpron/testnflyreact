@@ -44,6 +44,11 @@ export const PassangersBack = () => {
                 confidence to the passengers and crew that all on-board have
                 tested negaitve for Covid-19 immediately before departure.
               </p>
+              <span>
+                <a href="/images/downgrade-for-global-air-travel-outlook.pdf">
+                  1) IATA Economics analysis{" "}
+                </a>
+              </span>
             </div>
 
             <img className={styles.mainImage} src="/images/peopleWalking.png" />
@@ -114,8 +119,8 @@ export const PassangersBack = () => {
                 <ClockRing
                   radius={40}
                   stroke={6}
-                  progress={(20 / 60) * 100}
-                  text={"20 min"}
+                  progress={(30 / 60) * 100}
+                  text={"30 min"}
                   delay="1.75s"
                   trigger={triggerClocks}
                 />

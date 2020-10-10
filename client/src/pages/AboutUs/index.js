@@ -22,7 +22,7 @@ export const AboutUs = () => {
                 Bachelor of Design (Graphic Design) (Honours) RMIT University
               </span>
             </h5>
-            <img className={styles.linkedIn} src="/images/linkedin.webp" />
+            <img className={styles.linkedIn} src="/images/linkedin.png" />
 
             <p>
               Officia tempor incididunt cupidatat reprehenderit ut adipisicing
@@ -42,7 +42,7 @@ export const AboutUs = () => {
             <h5>
               <span>Bachelor of Design (Graphic Design) RMIT University</span>
             </h5>
-            <img className={styles.linkedIn} src="/images/linkedin.webp" />
+            <img className={styles.linkedIn} src="/images/linkedin.png" />
 
             <p>
               Officia tempor incididunt cupidatat reprehenderit ut adipisicing
@@ -66,7 +66,7 @@ export const AboutUs = () => {
                 University
               </span>
             </h5>
-            <img className={styles.linkedIn} src="/images/linkedin.webp" />
+            <img className={styles.linkedIn} src="/images/linkedin.png" />
 
             <p>
               Officia tempor incididunt cupidatat reprehenderit ut adipisicing
@@ -88,7 +88,7 @@ export const AboutUs = () => {
                 Bachelor of Communication Design (Honours) Swinburne University
               </span>
             </h5>
-            <img className={styles.linkedIn} src="/images/linkedin.webp" />
+            <img className={styles.linkedIn} src="/images/linkedin.png" />
 
             <p>
               Officia tempor incididunt cupidatat reprehenderit ut adipisicing

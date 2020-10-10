@@ -20,7 +20,7 @@ const partners = [
     text: `Nal von minden is one of the most recognized rapid test manufacturers in Europe.  Their design and the quality control of their complete test in Germany is based on the ISO 13485 standard.`,
   },
   {
-    img: "/images/biolam.jpg",
+    img: "/images/biolam.png",
     text:
       "Biolam is our accredited laboratory partner in France for the certification of Covid-19 test results. They are both Cofrac and ISO 15189 certified.",
   },

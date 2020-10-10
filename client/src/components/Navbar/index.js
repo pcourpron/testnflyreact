@@ -28,7 +28,7 @@ export const Navbar = () => {
           <li>Contact us</li>
         </Link>
         <Link onClick={() => setShowDrop(!showDrop)}>
-          <img className={styles.img} src="/images/linkedin.webp" />
+          <img className={styles.img} src="/images/linkedin.png" />
         </Link>
       </ul>
     </nav>

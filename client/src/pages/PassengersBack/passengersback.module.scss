@@ -71,11 +71,15 @@
     width: 10px;
     display: block;
     position: absolute;
-    top: 80px;
+    top: 10px;
     left: 35px;
     bottom: 100%;
     z-index: 0;
     animation: grow 2s linear forwards;
+
+    @media screen and (max-width: $mobileBreak) {
+      top: 80px;
+    }
   }
 }
 .icon {
@@ -97,6 +101,6 @@
     bottom: 100%;
   }
   100% {
-    bottom: 10px;
+    bottom: 20px;
   }
 }

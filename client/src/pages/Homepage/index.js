@@ -58,7 +58,7 @@ export const Homepage = () => {
             <img src="/images/family.jpg" />
             <div className={styles.sectionTitle}>Fly with confidence</div>
             <p className={styles.reopen}>
-              Confidently take to the skies again knowing that virutally every
+              Confidently take to the skies again knowing that virtually every
               passenger on your flight will be COVID free.
             </p>
           </div>
@@ -112,7 +112,7 @@ export const Homepage = () => {
               </strong>
             </i>
             <p>
-              - Stella Kyriakides, Europpean Commissioner for Health and Food
+              - Stella Kyriakides, European Commissioner for Health and Food
               Safety
             </p>
           </div>
