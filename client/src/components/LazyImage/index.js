@@ -18,7 +18,7 @@ export default ({ img, icon, text, className, preload }) => {
           {text}
         </>
       ) : (
-        <div style={{ height: "20px", width: "20px" }} />
+        <div style={{ height: "275px", width: "250px" }} />
       )}
     </VizSensor>
   );

@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Homepage.module.scss";
 import classNames from "classnames";
 import { Link, useHistory } from "react-router-dom";
 
 export const Homepage = () => {
   const history = useHistory();
+
+  const [showArrow, setShowArrow] = useState();
+  const scrollFunction = () => {
+    if (window.scrollY > 100) setShowArrow(false);
+    if (window.scrollY < 100) setShowArrow(true);
+  };
+  useEffect(() => {
+    setShowArrow(true);
+    window.addEventListener("scroll", () => scrollFunction(), true);
+    return () => window.removeEventListener("scroll", scrollFunction, true);
+  }, []);
+
   return (
     <main className={styles.main}>
       <div className={styles.mainImage}>
         <img src="/images/preboard.jpg" />
         <div className={styles.header}>
-          Safely take to the skies again
+          With TEST-N-FLY, Safely take to the skies again
           <p>
             Quick, reliable and secure Covid-19 Antigen testing to give
             passengers the confidence to fly in a Covid-19 free aircraft
@@ -20,6 +32,11 @@ export const Homepage = () => {
             <button> Learn more</button>
           </Link>
         </div>
+        <i
+          className={classNames("fas fa-angle-double-down", {
+            [styles.arrowFade]: !showArrow,
+          })}
+        ></i>
       </div>
       <div className={classNames(styles.section, styles.testingSection)}>
         <div className={styles.subSection}>
@@ -34,7 +51,7 @@ export const Homepage = () => {
           </Link>
           <div
             className={styles.pictureContainer}
-            onClick={() => history.push("/about-test-n-fly")}
+            onClick={() => history.push("/fly-with-confidence")}
           >
             <img src="/images/family.jpg" />
             Fly with confidence
@@ -53,7 +70,7 @@ export const Homepage = () => {
         <div className={styles.subSection}>
           <div
             className={styles.pictureContainer}
-            onClick={() => history.push("/about-testing")}
+            onClick={() => history.push("/about-test-n-fly#testing")}
           >
             <img src="/images/nasalSwab.jpg" className={styles.swabImage} />
             Quick and accurate testing

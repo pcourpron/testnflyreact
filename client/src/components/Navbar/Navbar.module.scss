@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 75px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,21 +11,70 @@
   background: white;
   z-index: 1000;
   box-shadow: 0 0 10px grey;
+
   .logoContainer {
     display: flex;
     align-items: center;
     color: $lightblue;
+    font-size: 18px;
+    font-weight: bold;
+
     cursor: pointer;
     .logo {
-      max-width: 60px;
+      max-width: 80px;
       margin-right: 20px;
+    }
+  }
+  .bars {
+    display: none;
+    font-size: 20px;
+  }
+  @media screen and (max-width: $mobileBreak) {
+    padding: 0 20px;
+    height: 70px;
+    .logoContainer {
+      font-size: 12px;
+      .logo {
+        max-width: 60px;
+      }
+    }
+    ul {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      transform: translate(0, -100%);
+      transition: 0.5s;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      z-index: -1;
+      &.dropDown {
+        transform: translate(0, 70px);
+      }
+      li {
+        padding: 20px;
+        width: 100%;
+      }
+    }
+    .bars {
+      display: inline-block;
     }
   }
 }
 
 .links {
   display: flex;
+  margin: 0;
+  align-items: center;
   li {
     margin: 0 20px;
+    font-size: 18px;
+    img {
+      max-width: 25px;
+      cursor: pointer;
+    }
   }
 }

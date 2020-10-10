@@ -12,6 +12,7 @@ export const AboutTest = () => {
   const hardware = createRef();
   const results = createRef();
   const timeline = createRef();
+  const accurate = createRef();
   const scrollTo = (name) => {
     let top;
     switch (name) {
@@ -46,7 +47,24 @@ export const AboutTest = () => {
     }
   };
 
-  useEffect(() => window.scrollTo(0, 0), []);
+  useEffect(() => {
+    let { hash } = window.location;
+    let top;
+    switch (hash) {
+      case "#testing":
+        top = accurate.current.offsetTop - 80;
+
+        window.scrollTo({
+          top,
+          behavior: "smooth",
+        });
+
+        break;
+
+      default:
+        break;
+    }
+  }, []);
   return (
     <>
       <div>
@@ -119,7 +137,40 @@ export const AboutTest = () => {
                 link to laboratory
               </div>
             </div>
+            <div className={styles.subSection} ref={accurate}>
+              <LazyImage
+                className={classNames(styles.sidebarImage, styles.accuracyImg)}
+                img="/images/accuracy.png"
+              />{" "}
+              <div>
+                <div className={styles.iconHeader}>Accurate Results</div>
+                <p>
+                  Magna exercitation dolore aute officia aliquip.Culpa velit
+                  nulla id Lorem id veniam ea incididunt laborum velit voluptate
+                  incididunt non laboris.Mollit elit eu cupidatat aute
+                  exercitation enim nulla esse irure.Dolor minim ipsum occaecat
+                  adipisicing magna ullamco Lorem occaecat.
+                </p>
+              </div>
+            </div>
+            <div className={styles.subSection}>
+              <LazyImage
+                className={classNames(styles.sidebarImage, styles.accuracyImg)}
+                img="/images/timer.jpg"
+              />{" "}
+              <div>
+                <div className={styles.iconHeader}>Quick Results</div>
+                <p>
+                  Magna exercitation dolore aute officia aliquip.Culpa velit
+                  nulla id Lorem id veniam ea incididunt laborum velit voluptate
+                  incididunt non laboris.Mollit elit eu cupidatat aute
+                  exercitation enim nulla esse irure.Dolor minim ipsum occaecat
+                  adipisicing magna ullamco Lorem occaecat.
+                </p>
+              </div>
+            </div>
           </div>
+
           <div className={styles.section}>
             <h1 ref={timeline}>Timeline</h1>
             <div className={styles.subSection}>

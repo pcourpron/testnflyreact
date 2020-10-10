@@ -16,6 +16,7 @@ import { Footer } from "./components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
+import { Confidence } from "./pages/Confidence";
 const imageArray = [
   "/images/preboard.jpg",
   "/images/team.jpg",
@@ -26,7 +27,7 @@ function App() {
   const [showInit, setShowInit] = useState(true);
 
   useEffect(() => {
-    cacheImages(imageArray, () => setTimeout(() => setShowInit(false), 1000));
+    cacheImages(imageArray, () => setTimeout(() => setShowInit(false), 3000));
   }, []);
   return (
     <div className="App">
@@ -40,6 +41,7 @@ function App() {
         <Route path="/passengers-back" component={PassangersBack} />
         <Route path="/about-test-n-fly" component={AboutTest} />
         <Route path="/about-testing" component={AboutTesting} />
+        <Route path="/fly-with-confidence" component={Confidence} />
         <Route>
           <Redirect to="/" />
         </Route>

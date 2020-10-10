@@ -21,7 +21,7 @@
       justify-content: space-between;
     }
     .paragraphs {
-      flex: 0.5;
+      flex: 0.65;
     }
     h2 {
       color: $darkblue;
@@ -34,8 +34,8 @@
     }
 
     img {
-      max-width: 500px;
-      flex: 1;
+      max-width: 550px;
+      flex: 0.45;
     }
     svg {
       min-width: 80px;

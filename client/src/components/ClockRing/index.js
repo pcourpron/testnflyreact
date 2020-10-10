@@ -17,7 +17,7 @@ export default ({ radius, stroke, progress, text, delay, trigger }) => {
         fill="white"
         strokeWidth={"1px"}
         style={{ strokeDashoffset }}
-        stroke-width={"1px"}
+        strokeWidth={"1px"}
         r={normalizedRadius + stroke / 2}
         cx={radius}
         cy={radius}
@@ -35,7 +35,7 @@ export default ({ radius, stroke, progress, text, delay, trigger }) => {
           transition: "1s",
           transitionDelay: delay,
         }}
-        stroke-width={stroke}
+        strokeWidth={stroke}
         r={normalizedRadius}
         cx={radius}
         cy={radius}
@@ -46,7 +46,7 @@ export default ({ radius, stroke, progress, text, delay, trigger }) => {
         fill="transparent"
         strokeWidth={"1px"}
         style={{ strokeDashoffset }}
-        stroke-width={"1px"}
+        strokeWidth={"1px"}
         r={normalizedRadius - stroke / 2}
         cx={radius}
         cy={radius}

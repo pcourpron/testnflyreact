@@ -13,7 +13,44 @@ export const PassangersBack = () => {
       <h1>Bring your passengers back!</h1>
       <div>
         <div className={styles.infoContainer}>
+          <div className={classNames(styles.subSection, styles.headerInfo)}>
+            <div className={styles.paragraphs}>
+              <p>
+                The Covid-19 pandemic has resulted in a dramatic reduction in
+                air traffic, with IATA forecasting over 50% reduction in 2020
+                RPKs versus 2019 <sup>(1)</sup>. In many parts of the world the
+                early signs of a traffic recovery have stalled due to the
+                continued growth in Covid-19 cases and resulting government
+                action.
+              </p>
+              <p>
+                Even with much reduced seat capacity, load factors remain
+                stubbornly below break-even levels, with typical summer 2020
+                load factors of 40-50% for international flights and 60-70% for
+                domestic flight<sup>(1)</sup>. A key enabler to resuming
+                profitable flying will be the ability to bring passengers back,
+                who for the moment choose not to travel.
+              </p>
+              <p>
+                TEST-N-FLY is an integrated, portable and inexpensive Covid-19
+                testing solution, that provides rapid point-of-departure
+                testing, result analysis and then immediate communication of the
+                result to the passenger and to the airline.
+              </p>
+              <p>
+                TEST-N-FLY adds less than 10 minutes to a traditional airline
+                check-in, gives the airline ample time to deny boarding to the
+                minority of passengers who test “positive”, and provides
+                confidence to the passengers and crew that all on-board have
+                tested negaitve for Covid-19 immediately before departure.
+              </p>
+            </div>
+
+            <img src="/images/peopleWalking.png" />
+          </div>
           <div className={styles.subSection}>
+            <h2>Results in 20 minutes</h2>
+
             <div
               className={classNames(
                 styles.integrationIcons,
@@ -21,8 +58,6 @@ export const PassangersBack = () => {
                 styles.trigger
               )}
             >
-              <h2>Results in 20 minutes</h2>
-
               <div className={styles.icon}>
                 <ClockRing
                   radius={40}
@@ -93,7 +128,6 @@ export const PassangersBack = () => {
               </div>
             </div>
           </div>
-          <img src="/images/peopleWalking.png" />
         </div>
       </div>
     </div>
