@@ -22,7 +22,7 @@ const partners = [
   {
     img: "/images/biolam.png",
     text:
-      "Biolam is our accredited laboratory partner in France for the certification of Covid-19 test results. They are both Cofrac and ISO 15189 certified.",
+      "Biolam is our accredited laboratory partner in France for the certification of Covid-19 test results. They are both Cofrac and ISO 15189 certified. Examens et sites accrédités disponibles sur ",
   },
   {
     img: "/images/sillab.png",
@@ -52,8 +52,19 @@ export const Partners = () => {
               [styles.nal]: partner.img === "/images/testLogo.png",
               [styles.pvp]: partner.img === "/images/pvplogo.png",
             })}
-          />{" "}
-          {partner.text}
+          />
+          <span>
+            {partner.text}
+            {partner.img === "/images/biolam.png" ? (
+              <a
+                className={styles.link}
+                target="_blank"
+                href="https://www.cofrac.fr"
+              >
+                www.cofrac.fr
+              </a>
+            ) : null}
+          </span>
         </p>
       ))}
     </div>
