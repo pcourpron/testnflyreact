@@ -13,15 +13,25 @@
     margin-top: 50px;
     width: 100%;
     align-items: center;
+    @media screen and (max-width: $mobileBreak) {
+      margin-top: 20px;
+    }
     .subSection {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       max-width: 1000px;
       justify-content: space-between;
+      @media screen and (max-width: $mobileBreak) {
+        flex-direction: column-reverse;
+      }
     }
     .paragraphs {
       flex: 0.65;
+      @media screen and (max-width: $mobileBreak) {
+        width: 80%;
+        margin: 10px auto;
+      }
     }
     h2 {
       color: $darkblue;
@@ -36,6 +46,10 @@
     img {
       max-width: 550px;
       flex: 0.45;
+      @media screen and (max-width: $mobileBreak) {
+        max-width: 80%;
+        margin: 0 auto 20px;
+      }
     }
     svg {
       min-width: 80px;

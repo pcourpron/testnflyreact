@@ -219,7 +219,13 @@ export const AboutTest = () => {
                     />
                   </div>
                   <div className={styles.icon}>
-                    <div style={{ height: "80px", width: "110px" }}></div>
+                    <div
+                      style={{
+                        height: "80px",
+                        width: "110px",
+                        minWidth: "110px",
+                      }}
+                    ></div>
                     <Icon
                       icon
                       delay={2}
@@ -228,7 +234,13 @@ export const AboutTest = () => {
                     />
                   </div>
                   <div className={styles.icon}>
-                    <div style={{ height: "80px", width: "110px" }}></div>
+                    <div
+                      style={{
+                        height: "80px",
+                        width: "110px",
+                        minWidth: "110px",
+                      }}
+                    ></div>
 
                     <Icon
                       icon

@@ -54,9 +54,12 @@
       &.dropDown {
         transform: translate(0, 70px);
       }
-      li {
-        padding: 20px;
+      a {
         width: 100%;
+        li {
+          padding: 20px 0;
+          width: 100%;
+        }
       }
     }
     .bars {
@@ -69,12 +72,15 @@
   display: flex;
   margin: 0;
   align-items: center;
-  li {
-    margin: 0 20px;
-    font-size: 18px;
+  a {
+    li {
+      margin: 0 20px;
+      font-size: 18px;
+    }
     img {
       max-width: 25px;
       cursor: pointer;
+      margin: 20px 0 20px 20px;
     }
   }
 }

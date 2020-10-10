@@ -1,5 +1,6 @@
 import styles from "./clock.module.scss";
 import React, { useState, useEffect } from "react";
+
 export default ({ radius, stroke, progress, text, delay, trigger }) => {
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
@@ -11,7 +12,12 @@ export default ({ radius, stroke, progress, text, delay, trigger }) => {
       setInitProgress(circumference - (progress / 100) * circumference);
   }, [progress, trigger]);
   return (
-    <svg height={radius * 2} width={radius * 2} style={{ marginRight: "30px" }}>
+    <svg
+      height={radius * 2}
+      width={radius * 2}
+      style={{ marginRight: "30px" }}
+      className={styles.svg}
+    >
       <circle
         stroke="black"
         fill="white"

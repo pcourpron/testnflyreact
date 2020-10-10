@@ -1,6 +1,7 @@
 @import "../../styles/index.scss";
 
 .aboutUs {
+  padding-top: 20px;
   .mainImage {
     width: 100%;
     background-attachment: fixed;
@@ -11,6 +12,9 @@
     overflow: hidden;
     min-height: 30vw;
 
+    @media screen and (max-width: $mobileBreak) {
+      min-height: 50vw;
+    }
     img {
       height: 34vw;
       display: block;
@@ -19,6 +23,9 @@
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 0;
+      @media screen and (max-width: $mobileBreak) {
+        min-height: 50vw;
+      }
     }
   }
   h1 {
@@ -41,8 +48,12 @@
       padding: 0 20px;
       display: flex;
       align-items: center;
+      margin-bottom: 20px;
 
-      min-width: 450px;
+      @media screen and (max-width: $mobileBreak) {
+        min-height: 35vw;
+        min-width: unset;
+      }
       &:nth-child(n + 3) {
         margin: 40px 0;
       }
@@ -54,22 +65,34 @@
         max-width: 25px;
         cursor: pointer;
         border-radius: 0;
+        margin-bottom: 5px;
       }
       img {
         border-radius: 50%;
         max-width: 200px;
         margin-right: 20px;
+        @media screen and (max-width: $mobileBreak) {
+          max-width: 150px;
+        }
       }
       h4 {
         font-size: 20px;
       }
       h5 {
         color: grey;
+        @media screen and (max-width: $mobileBreak) {
+          font-size: 14px;
+        }
       }
       p {
         border-top: 1px solid $darkblue;
         border-bottom: 1px solid $darkblue;
         padding: 20px 0;
+        @media screen and (max-width: $mobileBreak) {
+          border-top: 0px;
+          padding: 0 0 20px;
+          font-size: 13px;
+        }
       }
     }
   }

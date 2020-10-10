@@ -22,7 +22,7 @@ export const Homepage = () => {
       <div className={styles.mainImage}>
         <img src="/images/preboard.jpg" />
         <div className={styles.header}>
-          With TEST-N-FLY, Safely take to the skies again
+          With TEST-N-FLY, safely take to the skies again
           <p>
             Quick, reliable and secure Covid-19 Antigen testing to give
             passengers the confidence to fly in a Covid-19 free aircraft
@@ -42,7 +42,9 @@ export const Homepage = () => {
         <div className={styles.subSection}>
           <Link className={styles.pictureContainer} to="/passengers-back">
             <img src="/images/terminal.jpg" className={styles.swabImage} />
-            Bring your passengers back
+            <div className={styles.sectionTitle}>
+              Bring your passengers back
+            </div>
             <p className={styles.reopen}>
               TEST-N-FLY offers the ability to perform quick, accurate, and
               reliable COVID testing in airports to allow airline to operate at
@@ -54,7 +56,7 @@ export const Homepage = () => {
             onClick={() => history.push("/fly-with-confidence")}
           >
             <img src="/images/family.jpg" />
-            Fly with confidence
+            <div className={styles.sectionTitle}>Fly with confidence</div>
             <p className={styles.reopen}>
               Confidently take to the skies again knowing that virutally every
               passenger on your flight will be COVID free.
@@ -73,7 +75,9 @@ export const Homepage = () => {
             onClick={() => history.push("/about-test-n-fly#testing")}
           >
             <img src="/images/nasalSwab.jpg" className={styles.swabImage} />
-            Quick and accurate testing
+            <div className={styles.sectionTitle}>
+              Quick and accurate testing
+            </div>
             <p className={styles.reopen}>
               Quick, reliable and secure at airport Covid-19 Antigen testing to
               give passengers the confidence to fly in a Covid-19 free aircraft
@@ -85,7 +89,9 @@ export const Homepage = () => {
             onClick={() => history.push("/about-test-n-fly")}
           >
             <img src="/images/lab-technicians.jpg" />
-            Powered by accredited laboratories
+            <div className={styles.sectionTitle}>
+              Powered by accredited laboratories
+            </div>
             <p className={styles.reopen}>
               Cofrac and ISO 15189 certified laboratories provide quick and
               reliable off-site COVID-19 test results.
@@ -102,9 +108,8 @@ export const Homepage = () => {
               <br />
               <strong>
                 This is a cornerstone of our roadmap towards lifting coronavirus
-                containment measures.
+                containment measures. "
               </strong>
-              "
             </i>
             <p>
               - Stella Kyriakides, Europpean Commissioner for Health and Food

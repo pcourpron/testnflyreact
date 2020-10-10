@@ -1,10 +1,19 @@
+@import "../../styles/index.scss";
+
+.partnerPage {
+  padding-top: 20px;
+}
 .title {
   text-align: center;
 }
 .partnerImg {
   max-width: 200px;
   min-width: 200px;
+
   margin-right: 30px;
+  @media screen and (max-width: $mobileBreak) {
+    margin: 0 0 10px 0;
+  }
 }
 
 .info {
@@ -13,7 +22,26 @@
   margin: 20px auto;
   max-width: 1000px;
   margin-bottom: 40px;
+  @media screen and (max-width: $mobileBreak) {
+    flex-direction: column;
+    padding: 20px 20px 0;
+    margin-bottom: 20px;
+  }
 }
 .partnerPage {
   padding-bottom: 40px;
+}
+
+.nal {
+  @media screen and (max-width: $mobileBreak) {
+    max-width: 120px;
+    min-width: 120px;
+  }
+}
+
+.pvp {
+  @media screen and (max-width: $mobileBreak) {
+    max-width: 150px;
+    min-width: 150px;
+  }
 }

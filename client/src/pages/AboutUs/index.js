@@ -11,7 +11,7 @@ export const AboutUs = () => {
       <div className={styles.columnsContainer}>
         <div className={styles.person}>
           <img
-            className="disc-img"
+            className={styles.discImg}
             alt="AndyOKeeffe-StudioAlto"
             srcset="https://www.studioalto.com/wp-content/uploads/2013/09/AndyOKeeffe-StudioAlto-293x293.jpg, https://www.studioalto.com/wp-content/uploads/2013/09/AndyOKeeffe-StudioAlto-293x293@2x.jpg 2x"
           />
@@ -33,7 +33,7 @@ export const AboutUs = () => {
         </div>
         <div className={styles.person}>
           <img
-            className="disc-img"
+            className={styles.discImg}
             alt="MarkOKeeffe-StudioAlto"
             srcset="https://www.studioalto.com/wp-content/uploads/2013/09/MarkOKeeffe-StudioAlto-293x293.jpg, https://www.studioalto.com/wp-content/uploads/2013/09/MarkOKeeffe-StudioAlto-293x293@2x.jpg 2x"
           />
@@ -54,7 +54,7 @@ export const AboutUs = () => {
         <div className="clearTab"></div>
         <div className={styles.person}>
           <img
-            className="disc-img"
+            className={styles.discImg}
             alt="EuniceYip-StudioAlto"
             srcset="https://www.studioalto.com/wp-content/uploads/2013/09/EuniceYip-StudioAlto-293x293.jpg, https://www.studioalto.com/wp-content/uploads/2013/09/EuniceYip-StudioAlto-293x293@2x.jpg 2x"
           />
@@ -77,7 +77,7 @@ export const AboutUs = () => {
         </div>
         <div className={styles.person}>
           <img
-            className="disc-img"
+            className={styles.discImg}
             src="https://www.studioalto.com/wp-content/uploads/2017/08/Lucy-StudioAlto-293x293.jpg"
             alt="Lucy-293x293"
           />

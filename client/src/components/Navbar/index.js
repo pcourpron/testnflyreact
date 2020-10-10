@@ -18,18 +18,18 @@ export const Navbar = () => {
         onClick={() => setShowDrop(!showDrop)}
       ></i>
       <ul className={classNames(styles.links, { [styles.dropDown]: showDrop })}>
-        <li onClick={() => setShowDrop(!showDrop)}>
-          <Link to="/partners">Partners</Link>
-        </li>
-        <li onClick={() => setShowDrop(!showDrop)}>
-          <Link to="/about-us">About Us</Link>
-        </li>
-        <li onClick={() => setShowDrop(!showDrop)}>
-          <Link to="/contact-us">Contact Us</Link>
-        </li>
-        <li onClick={() => setShowDrop(!showDrop)}>
+        <Link onClick={() => setShowDrop(!showDrop)} to="/partners">
+          <li>Partners</li>
+        </Link>
+        <Link onClick={() => setShowDrop(!showDrop)} to="/about-us">
+          <li>About us</li>
+        </Link>
+        <Link onClick={() => setShowDrop(!showDrop)} to="/contact-us">
+          <li>Contact us</li>
+        </Link>
+        <Link onClick={() => setShowDrop(!showDrop)}>
           <img className={styles.img} src="/images/linkedin.webp" />
-        </li>
+        </Link>
       </ul>
     </nav>
   );

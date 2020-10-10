@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./partners.module.scss";
-
+import classNames from "classnames";
 const partners = [
   {
     img: "/images/magentine.png",
@@ -46,8 +46,14 @@ export const Partners = () => {
       <h1 className={styles.title}>Partners</h1>
       {partners.map((partner) => (
         <p className={styles.info}>
-          {" "}
-          <img src={partner.img} className={styles.partnerImg} /> {partner.text}
+          <img
+            src={partner.img}
+            className={classNames(styles.partnerImg, {
+              [styles.nal]: partner.img === "/images/testLogo.png",
+              [styles.pvp]: partner.img === "/images/pvplogo.png",
+            })}
+          />{" "}
+          {partner.text}
         </p>
       ))}
     </div>

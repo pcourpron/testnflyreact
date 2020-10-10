@@ -1,0 +1,27 @@
+@import "../../styles/index.scss";
+.footer {
+  background: $darkblue;
+  color: white;
+  padding: 20px;
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a:last-child {
+      border-right: 0px solid white;
+    }
+    a {
+      &:hover {
+        font-weight: bold;
+      }
+      color: white;
+      padding: 0 20px;
+      border-right: 1px solid white;
+    }
+  }
+  .legal {
+    font-size: 12px;
+    text-align: center;
+  }
+}

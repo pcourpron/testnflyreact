@@ -46,7 +46,7 @@ export const PassangersBack = () => {
               </p>
             </div>
 
-            <img src="/images/peopleWalking.png" />
+            <img className={styles.mainImage} src="/images/peopleWalking.png" />
           </div>
           <div className={styles.subSection}>
             <h2>Results in 20 minutes</h2>

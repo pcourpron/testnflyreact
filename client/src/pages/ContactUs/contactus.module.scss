@@ -15,6 +15,9 @@
   img {
     max-width: 600px;
     width: 500px;
+    @media screen and (max-width: $mobileBreak) {
+      display: none;
+    }
   }
   .bodyContainer {
     display: flex;

@@ -1,12 +1,16 @@
 @import "../../styles/index.scss";
 .sectionHeader {
   background-image: url("/images/waiting.jpg");
+  background-position: center;
   background-size: cover;
   text-align: center;
 
   padding: 160px 120px 160px 120px;
   width: 100%;
   position: relative;
+  @media screen and (max-width: $mobileBreak) {
+    padding: 120px 40px 120px;
+  }
   &::after {
     content: "";
     top: 0;
@@ -28,6 +32,11 @@
     margin-bottom: 15px;
     color: white;
     text-shadow: 0 0 10px grey;
+    @media screen and (max-width: $mobileBreak) {
+      font-size: 30px;
+      font-weight: bold;
+      line-height: normal;
+    }
   }
   .steps {
     text-shadow: 0 0 5px black;
@@ -54,6 +63,10 @@
   flex-direction: column;
   width: 1050px;
   margin: 30px auto;
+  @media screen and (max-width: $mobileBreak) {
+    width: 100%;
+    padding: 0 20px;
+  }
   .subSection {
     display: flex;
     width: 100%;
@@ -61,6 +74,9 @@
     margin: 20px auto;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: $mobileBreak) {
+      flex-wrap: wrap;
+    }
     &:nth-child(2n + 1) {
       flex-direction: row-reverse;
     }
@@ -79,10 +95,18 @@
     }
     .sidebarImage {
       max-width: 400px;
+      @media screen and (max-width: $mobileBreak) {
+        max-width: 275px;
+        margin: 0 auto;
+      }
     }
     .accuracyImg {
       max-width: 200px;
       margin: 40px 100px;
+      @media screen and (max-width: $mobileBreak) {
+        max-width: 150px;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -102,6 +126,9 @@
     bottom: 100%;
     z-index: 0;
     animation: grow 2s linear forwards;
+    @media screen and (max-width: $mobileBreak) {
+      top: 20px;
+    }
   }
 }
 .icon {
@@ -111,6 +138,11 @@
   min-width: 350px;
   text-align: start;
   z-index: 10;
+  @media screen and (max-width: $mobileBreak) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 .arrow {
   width: 50px;
