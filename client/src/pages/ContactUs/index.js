@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./contactus.module.scss";
 import classNames from "classnames";
+import axios from "axios";
 export const ContactUs = () => {
   const [firstname, setFirstName] = useState();
   const [lastname, setLastName] = useState();
@@ -17,10 +18,12 @@ export const ContactUs = () => {
   function emailSubmit(event) {
     event.preventDefault();
     setShowLoading(true);
-    setTimeout(() => {
-      setShowLoading(false);
-      setShowConfirmation(true);
-    }, 3000);
+    axios
+      .post("/email", { message, email, first: firstname, last: lastname })
+      .then((res) => {
+        setShowLoading(false);
+        setShowConfirmation(true);
+      });
   }
   return (
     <div className={styles.ContactUs}>

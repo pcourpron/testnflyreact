@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const email = require("./api/email");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -13,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Define API routes here
-
+app.use(email);
 // Send every other request to the React app
 
 app.get("*", (req, res) => {
