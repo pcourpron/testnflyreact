@@ -13,21 +13,25 @@ export const AboutUs = () => {
           <img
             className={styles.discImg}
             alt="AndyOKeeffe-StudioAlto"
-            srcset="https://www.studioalto.com/wp-content/uploads/2013/09/AndyOKeeffe-StudioAlto-293x293.jpg, https://www.studioalto.com/wp-content/uploads/2013/09/AndyOKeeffe-StudioAlto-293x293@2x.jpg 2x"
+            srcset="/images/person.png"
           />
           <div>
-            <h4>Andrew O’Keeffe</h4>
+            <h4>Daniel Attias</h4>
             <h5>
-              <span>
-                Bachelor of Design (Graphic Design) (Honours) RMIT University
-              </span>
+              <span>Président Biolam, Medical Biologist</span>
             </h5>
-            <img className={styles.linkedIn} src="/images/linkedin.png" />
-
+            <a
+              href="https://www.linkedin.com/in/daniel-attias-631279121/"
+              target="_blank"
+            >
+              <img className={styles.linkedIn} src="/images/linkedin.png" />
+            </a>
             <p>
-              Officia tempor incididunt cupidatat reprehenderit ut adipisicing
-              tempor Lorem ipsum cillum aliquip incididunt labore. Cillum et
-              enim eu quis sunt veniam cupidatat adipisicing sunt.
+              Daniel Attias has been developing and operating Medical Biology
+              Laboratories for 15 years. He grew his Lab company from 4
+              laboratories to 46 laboratories by combining organic and external
+              growth until the sale to Eurofins in 2018. Daniel is the CEO of
+              BIOLAM in charge to perform all the Covid-19 test for Test-N-Fly.
             </p>
           </div>
         </div>
@@ -35,19 +39,29 @@ export const AboutUs = () => {
           <img
             className={styles.discImg}
             alt="MarkOKeeffe-StudioAlto"
-            srcset="https://www.studioalto.com/wp-content/uploads/2013/09/MarkOKeeffe-StudioAlto-293x293.jpg, https://www.studioalto.com/wp-content/uploads/2013/09/MarkOKeeffe-StudioAlto-293x293@2x.jpg 2x"
+            srcset="/images/person.png"
           />
           <div>
-            <h4>Mark O’Keeffe</h4>
+            <h4>Elisabeth Lalanne</h4>
             <h5>
-              <span>Bachelor of Design (Graphic Design) RMIT University</span>
+              <span>Medical Biologist and technical evaluator at Cofrac</span>
             </h5>
-            <img className={styles.linkedIn} src="/images/linkedin.png" />
+            <a
+              href="https://www.linkedin.com/in/elisabeth-lalanne-elslincoln/"
+              target="_blank"
+            >
+              <img className={styles.linkedIn} src="/images/linkedin.png" />
+            </a>
 
             <p>
-              Officia tempor incididunt cupidatat reprehenderit ut adipisicing
-              tempor Lorem ipsum cillum aliquip incididunt labore. Cillum et
-              enim eu quis sunt veniam cupidatat adipisicing sunt.
+              Elisabeth has more than 20 years of experience in a private
+              laboratory, Quality Director responsible for accreditation
+              according to ISO 15189 for more than 10 years. Elisabeth is a
+              Cofrac auditor with extensive experiences in diagnostics methods
+              accreditations for Medical laboratories. She is in charge of the
+              support and implementing adequate regulatory constraints to ensure
+              Test-N-Fly provides the best solution for the patients and
+              customers.
             </p>
           </div>
         </div>
@@ -56,48 +70,58 @@ export const AboutUs = () => {
           <img
             className={styles.discImg}
             alt="EuniceYip-StudioAlto"
-            srcset="https://www.studioalto.com/wp-content/uploads/2013/09/EuniceYip-StudioAlto-293x293.jpg, https://www.studioalto.com/wp-content/uploads/2013/09/EuniceYip-StudioAlto-293x293@2x.jpg 2x"
+            srcset="/images/francois.jpeg"
           />
           <div>
-            <h4>Eunice Yip</h4>
+            <h4>Francois Dupoteau </h4>
             <h5>
-              <span>
-                Bachelor of Design (Communication Design) (Honours) RMIT
-                University
-              </span>
+              <span>Engineer, CEO of Magentine Healthcare </span>
             </h5>
-            <img className={styles.linkedIn} src="/images/linkedin.png" />
+            <a
+              href="https://www.linkedin.com/in/francois-dupoteau-aaa61113/"
+              target="_blank"
+            >
+              <img className={styles.linkedIn} src="/images/linkedin.png" />
+            </a>
 
             <p>
-              Officia tempor incididunt cupidatat reprehenderit ut adipisicing
-              tempor Lorem ipsum cillum aliquip incididunt labore. Cillum et
-              enim eu quis sunt veniam cupidatat adipisicing sunt.
+              Francois Dupoteau has international experience in the In Vitro
+              diagnostics and IT in Europe and North America . Francois is a
+              cofounders of several Biotech companies and start-ups. He worked
+              more than 20 years with companies special­izing in IT healthcare
+              solutions and infectious disease diagnostics tests. Francois is
+              the CEO of Magentine Healthcare and in charge to implement the
+              Test-N-Fly solution.
             </p>
           </div>
         </div>
         <div className={styles.person}>
           <img
             className={styles.discImg}
-            src="https://www.studioalto.com/wp-content/uploads/2017/08/Lucy-StudioAlto-293x293.jpg"
+            src="/images/henri.jpeg"
             alt="Lucy-293x293"
           />
           <div>
-            <h4>Lucy Boehme</h4>
+            <h4>Henri Courpron</h4>
             <h5>
-              <span>
-                Bachelor of Communication Design (Honours) Swinburne University
-              </span>
+              <span>Founder & Chairman of Plane View Partners</span>
             </h5>
-            <img className={styles.linkedIn} src="/images/linkedin.png" />
-
+            <a href="https://www.linkedin.com/in/hcourpron/" target="_blank">
+              <img className={styles.linkedIn} src="/images/linkedin.png" />
+            </a>
             <p>
-              Officia tempor incididunt cupidatat reprehenderit ut adipisicing
-              tempor Lorem ipsum cillum aliquip incididunt labore. Cillum et
-              enim eu quis sunt veniam cupidatat adipisicing sunt.
+              Mr. Courpron has held a number of aviation management executive
+              positions including Executive Vice President, Procurement at
+              Airbus France, President and Chief Executive Officer of Airbus
+              North America, Executive Officer of International Lease Finance
+              Corporation ("ILFC"), and President at Seabury Aviation &
+              Aerospace. Mr. Courpron is currently the chairman of Plane View
+              Partners, an advisory firm focusing on strategy, business model
+              development, investor support, M&A, and select aircraft advisory
+              work.
             </p>
           </div>
         </div>
-        <div className="clearTab"></div>
       </div>
     </div>
   );

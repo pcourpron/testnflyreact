@@ -94,7 +94,9 @@ export const AboutTest = () => {
                   and transmits tests over the FioNet to a server for complete
                   traceability and immediate review by a certified professional.
                 </p>
-                link to fio Rdt
+                <a href="https://www.fio.com/" target="_blank">
+                  Learn more here
+                </a>
               </div>
             </div>
             <div className={styles.subSection}>
@@ -112,7 +114,10 @@ export const AboutTest = () => {
                   equivalent accuracy to RT-PCR (Molecular) tests for patients
                   with a strong viral load.
                 </p>
-                link to atigen testing
+                <a href="https://www.nadal-test.com/" target="_blank">
+                  {" "}
+                  Learn more here{" "}
+                </a>
               </div>
             </div>
           </div>
@@ -128,28 +133,31 @@ export const AboutTest = () => {
                   Accredited laboratories interpret results
                 </div>
                 <p>
-                  Qualified laboratory technicians from accredited partner
-                  laboratories will read, intepret and send the results back to
-                  the airline and the passenger. This allows for tests to be
-                  done anywhere without the need to set up an on site
-                  laboratory.
+                  Authorized staff from accredited partner laboratories will
+                  read, intepret and send the results back to the airline and
+                  the passenger. This allows for tests to be done anywhere
+                  without the need to set up an on site laboratory.
                 </p>
-                link to laboratory
+                <a href="https://www.biolam.fr/" target="_blank">
+                  {" "}
+                  Learn more here
+                </a>
               </div>
             </div>
             <div className={styles.subSection} ref={accurate}>
               <LazyImage
                 className={classNames(styles.sidebarImage, styles.accuracyImg)}
                 img="/images/accuracy.png"
-              />{" "}
+              />
               <div>
                 <div className={styles.iconHeader}>Accurate Results</div>
                 <p>
-                  Magna exercitation dolore aute officia aliquip.Culpa velit
-                  nulla id Lorem id veniam ea incididunt laborum velit voluptate
-                  incididunt non laboris.Mollit elit eu cupidatat aute
-                  exercitation enim nulla esse irure.Dolor minim ipsum occaecat
-                  adipisicing magna ullamco Lorem occaecat.
+                  The staff is empowered and authorized to carry out samples and
+                  rapid tests in accordance with the regulatory and normative
+                  requirements. The rapid tests meet the performance criteria
+                  defined by the ” Haute Autorité de Santé” i.e. &gt;99%
+                  relative diagnostic specificity and &gt;relative diagnostic
+                  sensitivity (compared to the RT-PCR).
                 </p>
               </div>
             </div>
@@ -161,11 +169,9 @@ export const AboutTest = () => {
               <div>
                 <div className={styles.iconHeader}>Quick Results</div>
                 <p>
-                  Magna exercitation dolore aute officia aliquip.Culpa velit
-                  nulla id Lorem id veniam ea incididunt laborum velit voluptate
-                  incididunt non laboris.Mollit elit eu cupidatat aute
-                  exercitation enim nulla esse irure.Dolor minim ipsum occaecat
-                  adipisicing magna ullamco Lorem occaecat.
+                  30 min from Covid-19 Hub entrance to availability of the test
+                  results for the passenger and the Go/NoGo for the Airlines.
+                  Passengers spend less than 5 min in the Covid-19 hub.
                 </p>
               </div>
             </div>
@@ -254,8 +260,8 @@ export const AboutTest = () => {
                     <ClockRing
                       radius={40}
                       stroke={6}
-                      progress={(20 / 60) * 100}
-                      text={"20 min"}
+                      progress={(30 / 60) * 100}
+                      text={"30 min"}
                       delay="1.75s"
                       trigger={triggerClocks}
                     />
