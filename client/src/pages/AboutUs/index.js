@@ -39,7 +39,7 @@ export const AboutUs = () => {
           <img
             className={styles.discImg}
             alt="MarkOKeeffe-StudioAlto"
-            srcset="/images/person.png"
+            srcset="/images/elisabeth.jpeg"
           />
           <div>
             <h4>Elisabeth Lalanne</h4>

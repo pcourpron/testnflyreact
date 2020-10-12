@@ -138,7 +138,7 @@ export const AboutTest = () => {
                   the passenger. This allows for tests to be done anywhere
                   without the need to set up an on site laboratory.
                 </p>
-                <a href="https://www.biolam.fr/" target="_blank">
+                <a href="http://www.groupebiolam.fr/" target="_blank">
                   {" "}
                   Learn more here
                 </a>
@@ -155,9 +155,9 @@ export const AboutTest = () => {
                   The staff is empowered and authorized to carry out samples and
                   rapid tests in accordance with the regulatory and normative
                   requirements. The rapid tests meet the performance criteria
-                  defined by the ” Haute Autorité de Santé” i.e. &gt;99%
-                  relative diagnostic specificity and &gt;relative diagnostic
-                  sensitivity (compared to the RT-PCR).
+                  defined by the ”Haute Autorité de Santé” i.e. {">"}99%
+                  relative diagnostic specificity and {">"} 80% relative
+                  diagnostic sensitivity (compared to the RT-PCR).
                 </p>
               </div>
             </div>
@@ -221,7 +221,7 @@ export const AboutTest = () => {
                       icon
                       delay={1}
                       img="/images/swabIcon.png"
-                      text="Swab dipped in reagent solution; solution applied to test strip coated with antibodies that react to antigen presence"
+                      text="Swab dipped in reagent solution; solution applied to test strip that react to antigen presence"
                     />
                   </div>
                   <div className={styles.icon}>
@@ -252,7 +252,7 @@ export const AboutTest = () => {
                       icon
                       delay={3}
                       img="/images/labtech.png"
-                      text="Qualified laboratory technician evaluates slide image and determines test result"
+                      text="Authorized staff evaluates slide image and determines test result"
                     />
                   </div>
 

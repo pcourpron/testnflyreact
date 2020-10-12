@@ -54,7 +54,7 @@ export const PassangersBack = () => {
             <img className={styles.mainImage} src="/images/peopleWalking.png" />
           </div>
           <div className={styles.subSection}>
-            <h2>Results in 20 minutes</h2>
+            <h2>Results in 30 minutes</h2>
 
             <div
               className={classNames(
@@ -92,7 +92,7 @@ export const PassangersBack = () => {
                   icon
                   delay={1}
                   img="/images/swabIcon.png"
-                  text="Swab dipped in reagent solution; solution applied to test strip coated with antibodies that react to antigen presence"
+                  text="Swab dipped in reagent solution;vsolution applied to test strip that react to antigen presence"
                 />
               </div>
               <div className={styles.icon}>
@@ -111,7 +111,7 @@ export const PassangersBack = () => {
                   icon
                   delay={3}
                   img="/images/labtech.png"
-                  text="Qualified laboratory technician evaluates slide image and determines test result"
+                  text="Authorized staff evaluates slide image and determines test result"
                 />
               </div>
 
