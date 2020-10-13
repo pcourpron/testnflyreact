@@ -31,7 +31,8 @@ export const AboutUs = () => {
               Laboratories for 15 years. He grew his Lab company from 4
               laboratories to 46 laboratories by combining organic and external
               growth until the sale to Eurofins in 2018. Daniel is the CEO of
-              BIOLAM in charge to perform all the Covid-19 test for Test-N-Fly.
+              BIOLAM in charge to perform all the Covid-19 test for
+              TEST-N-FLY&trade;.
             </p>
           </div>
         </div>
@@ -60,7 +61,7 @@ export const AboutUs = () => {
               Cofrac auditor with extensive experiences in diagnostics methods
               accreditations for Medical laboratories. She is in charge of the
               support and implementing adequate regulatory constraints to ensure
-              Test-N-Fly provides the best solution for the patients and
+              TEST-N-FLY&trade; provides the best solution for the patients and
               customers.
             </p>
           </div>
@@ -91,7 +92,7 @@ export const AboutUs = () => {
               more than 20 years with companies special­izing in IT healthcare
               solutions and infectious disease diagnostics tests. Francois is
               the CEO of Magentine Healthcare and in charge to implement the
-              Test-N-Fly solution.
+              TEST-N-FLY&trade; solution.
             </p>
           </div>
         </div>

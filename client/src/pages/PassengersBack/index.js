@@ -32,13 +32,13 @@ export const PassangersBack = () => {
                 who for the moment choose not to travel.
               </p>
               <p>
-                TEST-N-FLY is an integrated, portable and inexpensive Covid-19
+                TEST-N-FLY&trade; is an integrated, portable and inexpensive Covid-19
                 testing solution, that provides rapid point-of-departure
                 testing, result analysis and then immediate communication of the
                 result to the passenger and to the airline.
               </p>
               <p>
-                TEST-N-FLY adds less than 10 minutes to a traditional airline
+                TEST-N-FLY&trade; adds less than 10 minutes to a traditional airline
                 check-in, gives the airline ample time to deny boarding to the
                 minority of passengers who test “positive”, and provides
                 confidence to the passengers and crew that all on-board have

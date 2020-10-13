@@ -29,7 +29,7 @@ export const ContactUs = () => {
     <div className={styles.ContactUs}>
       <div className={styles.header}>
         <h5>Got a question ?</h5>
-        <h1>CONTACT TEST-N-FLY</h1>
+        <h1>CONTACT TEST-N-FLY&trade;</h1>
       </div>
       <div className={styles.bodyContainer}>
         <div>

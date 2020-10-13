@@ -10,7 +10,7 @@ export const Footer = () => {
           <ul className={styles.footerLinks}>
             <Link to="/">Home</Link>
 
-            <Link to="/about-test-n-fly">About TEST-N-FLY</Link>
+            <Link to="/about-test-n-fly">About TEST-N-FLY&trade;</Link>
 
             <Link to="/passengers-back">Bring your passengers back !</Link>
 
@@ -24,10 +24,11 @@ export const Footer = () => {
           </ul>
         </div>
         <div className={styles.legal}>
-          TEST-N-FLY, the associated logo, and all associated TEST-N-FLY marks
-          are the registered trademarks of TEST-N-FLY. All third-party marks—®'
-          and ™'—are the property of their respective owners. © 2020 TEST-N-FLY
-          Incorporated. All rights reserved.
+          TEST-N-FLY&trade;, the associated logo, and all associated
+          TEST-N-FLY&trade; marks are the registered trademarks of
+          TEST-N-FLY&trade;. All third-party marks—®' and ™'—are the property of
+          their respective owners. © 2020 TEST-N-FLY&trade; Incorporated. All
+          rights reserved.
         </div>
       </div>
     </footer>

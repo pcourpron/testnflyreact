@@ -9,7 +9,7 @@ export const Navbar = () => {
       <Link to="/">
         <div className={styles.logoContainer}>
           <img className={styles.logo} src="/images/tnf-logo.png" />
-          TEST-N-FLY
+          TEST-N-FLY&trade;
         </div>
       </Link>
 

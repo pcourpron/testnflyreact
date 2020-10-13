@@ -109,10 +109,10 @@ export const AboutTest = () => {
                   Antigen Tests for rapid detection
                 </div>
                 <p>
-                  Test-N-Fly uses COVID-19 Antigen Rapid Test kits that detect
-                  Antigens indicating an active coronavirus infection. They have
-                  equivalent accuracy to RT-PCR (Molecular) tests for patients
-                  with a strong viral load.
+                  TEST-N-FLY&trade; uses COVID-19 Antigen Rapid Test kits that
+                  detect Antigens indicating an active coronavirus infection.
+                  They have equivalent accuracy to RT-PCR (Molecular) tests for
+                  patients with a strong viral load.
                 </p>
                 <a href="https://www.nadal-test.com/" target="_blank">
                   {" "}

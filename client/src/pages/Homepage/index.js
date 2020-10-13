@@ -22,7 +22,7 @@ export const Homepage = () => {
       <div className={styles.mainImage}>
         <img src="/images/preboard.jpg" />
         <div className={styles.header}>
-          With TEST-N-FLY, safely take to the skies again
+          With TEST-N-FLY&trade;, safely take to the skies again
           <p>
             Quick, reliable and secure Covid-19 Antigen testing to give
             passengers the confidence to fly in a Covid-19 free aircraft
@@ -46,9 +46,9 @@ export const Homepage = () => {
               Bring your passengers back
             </div>
             <p className={styles.reopen}>
-              TEST-N-FLY offers the ability to perform quick, accurate, and
-              reliable COVID testing in airports to allow airline to operate at
-              a higher capacity and better screen passengers.
+              TEST-N-FLY&trade; offers the ability to perform quick, accurate,
+              and reliable COVID testing in airports to allow airline to operate
+              at a higher capacity and better screen passengers.
             </p>
           </Link>
           <div

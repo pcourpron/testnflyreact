@@ -32,16 +32,22 @@ export const Confidence = () => {
                 are not readily available.
               </p>
               <p>
-                The TEST-N-FLY Antigen test eliminates this delay as the test is
-                performed during check-in, and with real-time results provides
-                both the passenger and the airline the confidence that all
-                passengers and crew on-board are Covid-19 free<sup>(1)</sup>.
+                The TEST-N-FLY&trade; Antigen test eliminates this delay as the
+                test is performed during check-in, and with real-time results
+                provides both the passenger and the airline the confidence that
+                all passengers and crew on-board are Covid-19 free<sup>(1)</sup>
+                .
               </p>
               <p>
                 The passenger also does not need to worry about obtaining a test
                 result before travel, and the airline maintains control of the
-                entire process by virtue of the integrated TEST-N-FLY solution.
+                entire process by virtue of the integrated TEST-N-FLY&trade;
+                solution.
               </p>
+              <span className={styles.legal}>
+                1) TEST-N-FLY Antigen test: Sensitivity = 97.56% (Ct range
+                20-30), Specificity 99.9%
+              </span>
             </div>
 
             <img src="/images/confidence.png" />
