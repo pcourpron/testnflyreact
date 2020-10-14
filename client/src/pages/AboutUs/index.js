@@ -13,7 +13,7 @@ export const AboutUs = () => {
           <img
             className={styles.discImg}
             alt="AndyOKeeffe-StudioAlto"
-            srcset="/images/person.png"
+            srcset="/images/daniel.jpg"
           />
           <div>
             <h4>Daniel Attias</h4>
