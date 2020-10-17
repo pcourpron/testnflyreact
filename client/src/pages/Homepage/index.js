@@ -58,8 +58,8 @@ export const Homepage = () => {
             <img src="/images/family.jpg" />
             <div className={styles.sectionTitle}>Fly with confidence</div>
             <p className={styles.reopen}>
-              Confidently take to the skies again knowing that virtually every
-              passenger on your flight will be COVID free.
+              Confidently take to the skies again knowing that EVERY passenger
+              on your flight will be COVID free.
             </p>
           </div>
         </div>
